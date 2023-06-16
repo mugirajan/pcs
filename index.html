@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pcs</title>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="resume.css">
+    </head>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        a{
+            text-decoration:none;
+        }
+        .header{
+            background: rgb(255, 255, 255);
+            transition: all 0.5s;
+            z-index: 997;
+            width:80%;
+            margin:0 auto;
+        }
+        .navia{
+            color:#ff006e !important;
+        }
+        .navigator {
+            display:flex;
+            justify-content:space-between;
+        }
+        .navigator a{
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #33045E;
+            text-transform: uppercase;
+            transition: 0.3s;
+            position: relative; 
+        }
+        .navigator a:hover{
+            color:#ff006e;
+        }
+        .margin{
+            margin-bottom:4%;
+        }
+        .row{
+            display:flex;
+            justify-content:space-between;
+        }
+        .h11{
+            line-height: 5px;
+            margin: -15px auto 20px !important;
+            position: relative;
+            width: 170px;
+            
+        }
+        
+        .img-sec{
+            width:10%;
+        }
+         img{
+            width:100%;
+        }
+        nav{
+            width:40%;
+        }
+        .section{
+            padding: 9rem 1rem;
+            background: linear-gradient(rgba(3, 4, 94, 0.9), rgb(3, 4, 94, 0.9)) !important;
+            color: white;
+        }
+        
+        .content-sec{
+            text-align:center !important;
+        }
+        .content-sec h1{
+            font-family: "Oleo Script Swash Caps";
+            font-weight: 550;
+            font-size:2rem;
+           
+        }
+        .content-sec p{
+            font-size:1.25rem;
+            line-height:1.5;
+        }
+        .content-sec button{
+            border-radius: 15px;
+            background-color: #fff;
+            border: none;
+            color: #33045E;
+            font-weight: bold;
+            text-align: center;
+            padding:5px 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.9);
+            transition: 0.5s;
+            line-height:1.5;
+            font-family:serif;
+            font-size:1.3rem;
+        }
+        .content-sec button:hover{
+            color:white;
+            background-color:red;
+        }
+        .about-section h1{
+           font-size:2.2rem;
+        }
+
+        .service-section h1{
+            font-size:2.2rem;
+        }
+        .about-img{
+            width:50%;
+            border:1px solid grey;
+        }
+        .about-img img{
+            width:100%;
+        }
+        .co-about-img{
+            padding:5px 5px;
+        }
+        .about-content{
+            width:50%;
+        }
+        .about-content h1{
+            font-size: 1.5rem;
+            font-family: "Roboto", sans-serif;
+            line-height: 30px;
+            font-style: oblique;
+        }
+        .about-content p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 19px;
+            line-height:1.5;
+           
+        }
+        .about-content button{
+            border-radius: 15px;
+            background-color: #fff;
+            border: none;
+            color: #33045E;
+            font-weight: bold;
+            text-align: center;
+            padding:5px 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.9);
+            transition: 0.5s;
+            line-height:1.5;
+            font-family:serif;
+            font-size:1.2rem;
+        }
+        .about-content button:hover{
+            background-color:Red;
+            color:white;
+        }
+        #about-btn{
+            display:flex;
+            margin:0 auto;
+        }
+        .service-section{
+            background-color:#f7f7f7;
+        }
+       
+        .bg{
+            padding:15px 10px;
+            border-radius:1rem;
+            margin-top:3%;
+        }
+        .bg .image-sec{
+            width:98%;
+            display:flex;
+           margin:0 auto;
+        }
+        .h2head{
+            display:flex;
+            justify-content: center;
+            font-family: sans-serif;
+
+        }
+        .para{
+            font-family: sans-serif;
+            font-size:18px;
+        }
+        .teams{
+            width: 100%;
+            padding: 50px 0px;
+            background:linear-gradient(#dedefae6,#dedefae6 ), url("../img/WhatsApp\ Image\ 2022-06-27\ at\ 2.55.38\ PM.jpeg") ;
+        }
+        .teams-container{
+            width: 85%;
+            margin: auto;
+            display: flex;
+        }
+        .team-card{
+            width: 25%;
+            padding: 10px;
+        }
+        .team-box{
+            width: 100%;
+            background-color: white;
+            /* padding: 30px 10px; */
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .team-icon-position{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top:-20%;
+            display: flex;
+            justify-content: center;
+        }
+        .team-icons{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #03045ee6;
+            color: white;
+            border: 3px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .team-box h1{
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .team-box p{
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        
+        .icon-sec h2:hover{
+            color:red;
+        }
+        .h2icon{
+            text-align:Center;
+        }
+        footer{
+            padding:50px 10px;
+        }
+    </style>
+<body>
+    <div class="container">
+
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
